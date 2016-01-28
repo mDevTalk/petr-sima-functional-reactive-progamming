@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FRPDemoViewController" customModule="FRPDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="WOs-ik-OzU">
+                                <rect key="frame" x="20" y="200" width="560" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDf-L1-aZB">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6k-Rm-E1J">
+                                        <rect key="frame" x="0.0" y="130" width="560" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-EU-px1">
+                                        <rect key="frame" x="0.0" y="130" width="560" height="0.0"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WOs-ik-OzU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="200" id="8yl-sW-FhU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WOs-ik-OzU" secondAttribute="bottom" id="Hlo-hm-txg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WOs-ik-OzU" secondAttribute="bottom" constant="200" id="L7q-SR-FmW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="WOs-ik-OzU" secondAttribute="bottom" id="T5z-3h-etS"/>
+                            <constraint firstItem="WOs-ik-OzU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="V12-oq-6ph"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WOs-ik-OzU" secondAttribute="trailing" id="bWd-OQ-qdN"/>
+                            <constraint firstItem="WOs-ik-OzU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e9y-Q2-dE9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="T5z-3h-etS"/>
+                                <exclude reference="V12-oq-6ph"/>
+                                <exclude reference="Hlo-hm-txg"/>
+                                <exclude reference="L7q-SR-FmW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="NmO-EU-px1" id="Mdz-dF-8ZP"/>
+                        <outlet property="label" destination="c6k-Rm-E1J" id="fA6-HW-QE2"/>
+                        <outlet property="textField" destination="iDf-L1-aZB" id="Yjn-Qd-0eN"/>
+                        <outlet property="vStack" destination="WOs-ik-OzU" id="hVT-Zm-kHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

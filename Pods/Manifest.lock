@@ -1,0 +1,39 @@
+PODS:
+  - Argo (2.2.0)
+  - Curry (1.4.0)
+  - Firebase (2.5.0)
+  - ReactiveCocoa (4.0.0-alpha-3):
+    - ReactiveCocoa/UI (= 4.0.0-alpha-3)
+    - Result (~> 0.6-beta.4)
+  - ReactiveCocoa/Core (4.0.0-alpha-3):
+    - ReactiveCocoa/no-arc
+    - Result (~> 0.6-beta.4)
+  - ReactiveCocoa/no-arc (4.0.0-alpha-3):
+    - Result (~> 0.6-beta.4)
+  - ReactiveCocoa/UI (4.0.0-alpha-3):
+    - ReactiveCocoa/Core
+    - Result (~> 0.6-beta.4)
+  - Result (0.6.0-beta.6)
+  - SDWebImage (3.7.4):
+    - SDWebImage/Core (= 3.7.4)
+  - SDWebImage/Core (3.7.4)
+  - SnapKit (0.18.0)
+
+DEPENDENCIES:
+  - Argo
+  - Curry
+  - Firebase
+  - ReactiveCocoa (= 4.0.0-alpha-3)
+  - SDWebImage
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Argo: 4f52a32b4cd913c204e5a45f420b3fccad3e3f24
+  Curry: 294533187eedbf52db60a1e70c29b4f5c9f621c0
+  Firebase: 744617c0733b45198f9486ebd5cac64ec2d10d79
+  ReactiveCocoa: f03dcfd385b0e4ee5b7a323f5e0b146a498e12d3
+  Result: dc390d0b58f9ec43fcd536f1ebdd130803cc6cbc
+  SDWebImage: 247edd7dd80dd6124197b0d6a17846fe9d1df968
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+
+COCOAPODS: 0.39.0
